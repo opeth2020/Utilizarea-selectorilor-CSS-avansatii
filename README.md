@@ -1,1 +1,1 @@
-# Utilizarea-selectorilor-CSS-avansatii
+selectori CSS avansati
