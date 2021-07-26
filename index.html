@@ -11,8 +11,19 @@ a:link {
 a[target]{
     color:red
 }
-p:nth-last-of-type(2){
+#second-div p:nth-of-type(odd){
+    color: red;
+}
+
+#second-div p:nth-of-type(even){
     color: blue;
+}
+ p::after{
+    content:"NEW";
+    color: yellow;
+}
+p:last-child{
+    color: blueviolet;
 }
 
     </style>
@@ -23,7 +34,7 @@ p:nth-last-of-type(2){
     <p>Paragraph 1</p>
     <a href="https://www.google.com/">Google</a>
     <a href="https://www.google.com/doodles">Google Doodles</a>
-    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <a href="https://www.link-group.eu/" target="_blank">Go to Link Group</a>
     <div id="first-div">
         <h2>Subheading</h2>
         <p>Paragraph 2</p>
