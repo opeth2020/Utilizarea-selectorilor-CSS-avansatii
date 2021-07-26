@@ -5,27 +5,32 @@
     <meta charset="UTF-8">
     <title>Advanced CSS - Assignment 1</title>
     <style>
-a:link {
-    color:green;
-}
-a[target]{
-    color:red
-}
-#second-div p:nth-of-type(odd){
-    color: red;
-}
+        a[href^="https://www.google.com/"] {
+            color: green;
+        
+        }
 
-#second-div p:nth-of-type(even){
-    color: blue;
-}
- p::after{
-    content:"NEW";
-    color: yellow;
-}
-p:last-child{
-    color: blueviolet;
-}
+        a[target] {
+            color: red
+            
+        }
+        #first-div > p::after {
+            content: " - NEW";
+            color: yellow;
+        }
 
+
+        #second-div p:nth-of-type(odd) {
+            color: red;
+        }
+
+        #second-div p:nth-of-type(even) {
+            color: blue;
+        }
+        body > p ~ p:nth-of-type(odd):hover{
+            font-style: italic;
+        }
+    
     </style>
 </head>
 
@@ -50,6 +55,7 @@ p:last-child{
     </div>
     <p>Paragraph 9</p>
     <p>Paragraph 10</p>
+
 </body>
 
 </html>
